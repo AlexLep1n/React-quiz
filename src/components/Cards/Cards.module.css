@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 450px;
+}
+.card:before {
+  width: 95%;
+  bottom: -10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+.card:after {
+  width: 90%;
+  bottom: -20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+.card__title {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0 0 10px 0;
+}
+.card__answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+}
+.card__answer {
+  font-family: inherit;
+  border-radius: 8px;
+  border: 2px solid #cfc9c9;
+  background-color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-align: left;
+}
+.card__answer:hover {
+  border-color: #646cff;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 30px;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 25px;
+  width: 100%;
+}
+.progress__inner {
+  height: 100%;
+  border-radius: 30px;
+  width: 80%;
+  background: rgb(18, 231, 48);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, rgb(18, 231, 48) 0%, rgb(0, 212, 255) 100%);
+}/*# sourceMappingURL=Cards.module.css.map */
