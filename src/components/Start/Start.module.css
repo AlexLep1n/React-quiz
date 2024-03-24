@@ -1,0 +1,15 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 450px;
+}
+.start__btn {
+  transition: all 0.3s;
+}
+.start__btn:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=Start.module.css.map */

@@ -19,32 +19,12 @@
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1;
 }
-.card__title {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin: 0 0 10px 0;
-}
 .card__answers {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
   padding: 0;
-}
-.card__answer {
-  font-family: inherit;
-  border-radius: 8px;
-  border: 2px solid #cfc9c9;
-  background-color: #fff;
-  padding: 0.6em 1.2em;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  text-align: left;
-}
-.card__answer:hover {
-  border-color: #646cff;
 }
 
 .progress {

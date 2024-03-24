@@ -1,0 +1,12 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 450px;
+}
+.result__img {
+  width: 100px;
+}/*# sourceMappingURL=Result.module.css.map */

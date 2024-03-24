@@ -21,34 +21,12 @@
     z-index: 1;
   }
 
-  &__title {
-    font-size: 3.2em;
-    line-height: 1.1;
-    margin: 0 0 10px 0;
-  }
   &__answers {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
     padding: 0;
-  }
-
-  &__answer {
-    font-family: inherit;
-    border-radius: 8px;
-    border: 2px solid #cfc9c9;
-    background-color: #fff;
-    padding: 0.6em 1.2em;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: border-color 0.25s;
-    text-align: left;
-  }
-
-  &__answer:hover {
-    border-color: #646cff;
   }
 }
 

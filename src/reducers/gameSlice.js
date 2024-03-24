@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const cardsSlice = createSlice({
-  name: "cards",
+export const gameSlice = createSlice({
+  name: "game",
   initialState: {
     questions: [
       {
@@ -31,15 +31,29 @@ export const cardsSlice = createSlice({
         correct: 2,
       },
     ],
+    isStart: false,
+    correctAnswersCount: 0,
+    isEnd: false,
   },
   reducers: {
-    getCard: (state, { payload: step }) => {
-      state.questions = state.questions.filter(
-        (question) => question.id === step
-      );
+    addCorrectAnswer: (state) => {
+      state.correctAnswersCount++;
+    },
+    startGame: (state) => {
+      state.isStart = !state.isStart;
+    },
+    checkEnd: (state, { payload: step }) => {
+      state.questions.length === step + 1
+        ? (state.isEnd = true)
+        : (state.isEnd = false);
+    },
+    tryAgain: (state) => {
+      state.isEnd = !state.isEnd;
+      state.correctAnswersCount = 0;
     },
   },
 });
 
-export const { getCard } = cardsSlice.actions;
-export default cardsSlice.reducer;
+export const { addCorrectAnswer, startGame, checkEnd, tryAgain } =
+  gameSlice.actions;
+export default gameSlice.reducer;
